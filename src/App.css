@@ -1,0 +1,227 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; /* Prevent body from scrolling */
+}
+
+.App {
+  background-color: #ffffff;
+  padding: 30px;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh; /* Adjust height to fit the viewport */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.addTodo form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.addTodo input {
+  width: 75%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.addTodo button {
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.addTodo button:hover {
+  background-color: #218838;
+}
+
+.todo-list {
+  flex: 1; /* Allow the list to grow */
+  overflow-y: auto; /* Enable vertical scrolling within the list */
+}
+
+.todo-list ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  text-wrap: wrap;
+}
+
+.todo-list li:last-child {
+  border-bottom: 1px dotted #007bff;
+}
+
+.todo-list li div {
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+.todo-list li button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.todo-list li button:hover {
+  background-color: #c82333;
+}
+
+.filter-todos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.filter-todos button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.filter-todos button:hover {
+  background-color: #0056b3;
+}
+
+.clearCompleted {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.clearCompleted button {
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.clearCompleted button:hover {
+  background-color: #ff4a36;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* Adjust the size and styling of the days input */
+.addTodo input[type="number"] {
+  width: 60px; /* Fixed width for consistent alignment */
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-left: 10px; /* Space between text input and days input */
+}
+
+/* Ensure the form elements align properly */
+.addTodo form {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Style the text input */
+.addTodo input[type="text"] {
+  flex-grow: 1; /* Allow it to grow and take available space */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Style the button */
+.addTodo button {
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px; /* Space between days input and button */
+}
+
+.addTodo button:hover {
+  background-color: #218838;
+}
+
+/* Style for todo list items */
+.todo-list li {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space between text, days, and button */
+  padding: 12px 0;
+  text-wrap: wrap;
+}
+
+.todo-list li div {
+  flex-grow: 1; /* Allow text to grow and take available space */
+  font-size: 16px;
+  color: #333;
+}
+
+.todo-list li span {
+  margin-left: 10px; /* Space between text and days */
+  font-size: 16px;
+  color: #333;
+}
+
+.todo-list li button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.todo-list li button:hover {
+  background-color: #c82333;
+}
