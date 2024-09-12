@@ -90,12 +90,12 @@ In the `components` folder, you're organizing the React components used in your 
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/Bhupendra-Maurya/Todo-App
    ```
 
 2. **Navigate to the Project Directory:**
    ```bash
-   cd your-repo
+   cd Todo-App
    ```
 
 3. **Install Dependencies:**
