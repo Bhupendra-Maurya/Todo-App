@@ -1,4 +1,5 @@
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/3e0527c0-cbc1-4fa0-8a31-2f37b7a72a26)
+
 
 **In this project, we’ve built a to-do list application using React with TypeScript. Here’s a brief overview of what we've accomplished:**
 
